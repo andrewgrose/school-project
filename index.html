@@ -34,6 +34,18 @@
       console.log(this.activeEgg.metadata);
     });
     egg.listen();
+        
+    var eggDos = new Egg();
+    eggDos.addCode("o,u,c,h", function() {
+      jQuery('#ouchEgggif').fadeIn(500, function() {
+        window.setTimeout(function() { jQuery('#ouchEgggif').hide(); }, 20000);
+      });
+    }, "konami-code");
+    eggDos.addHook(function(){
+      console.log("Hook called for: " + this.activeEgg.keys);
+      console.log(this.activeEgg.metadata);
+    });
+    eggDos.listen();
     </script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -48,6 +60,7 @@
 <body id="page-top" class="index">
 <img id="egggif" src="http://stream1.gifsoup.com/view5/4693430/a-christmas-story-a-o.gif
 " />
+<img id="ouchEgggif" src="http://thoughtcatalog.files.wordpress.com/2013/07/4.gif?w=351&h=262" />
     <!-- Navigation -->
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
         <div class="container">

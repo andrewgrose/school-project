@@ -520,3 +520,13 @@ div#maincontent {
     width:800px;
     border-radius:10px;
 }
+#ouchEgggif {
+    position: absolute; 
+    top: 33%; 
+    left: 25%; 
+    display: none; 
+    z-index:5;
+    height:550px;
+    width:800px;
+    border-radius:10px;
+}
